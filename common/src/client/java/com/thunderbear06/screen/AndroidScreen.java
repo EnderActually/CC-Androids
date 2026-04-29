@@ -89,7 +89,7 @@ public class AndroidScreen extends AbstractComputerScreen<AndroidMenu> {
 
     protected TerminalWidget createTerminal() {
         //i recommend putting SOME kind of warning somewhere, like "compatible with 1.117.x but is unstable" as I have not tested this to its extent.
-        if (Platform.getMod("computercraft").getVersion().contains("1.117.")) { //todo: future proof this, for versions above 1.117.x
+        if (Platform.getMod("computercraft").getVersion().contains("1.118.")) { //todo: future proof this, for versions above 1.117.x
             try {
                 return NEW_CCTERM.newInstance(this.terminalData, getComputerInput(), getComputerOptions(), this.x + 8 + 17, this.y + 6);
             } catch (InstantiationException | InvocationTargetException | IllegalAccessException ignored) {} //like previous error, not show how you manage errors.
